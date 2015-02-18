@@ -43,7 +43,8 @@ function onDeviceReady() {
 		young_log("after onprogress.");*/
 
 		var filename = "test.zip";
-		downloadPath = fileSystem.root.toURL() + '/'+ filename;
+		//downloadPath = fileSystem.root.toURL() + '/'+ filename;
+		downloadPath = fileSystem.root.toURL() + filename;
 		var uri = encodeURI("http://192.168.199.171:8080/apk/test.zip");
 		young_log("downloadPath:"+downloadPath);
 		fileTransfer.download(
